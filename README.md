@@ -10,4 +10,4 @@
 <li>Funções Javascript</li>
 <li>Styled Components</li>
 <li>React Router</li>
-<li>Consumo de API</li>
+<li>Consumo de API usando fetch</li>
