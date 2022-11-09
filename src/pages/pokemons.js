@@ -1,9 +1,7 @@
-import { PokemonList } from '../components/PokemonList'
+import { PokemonList } from "../components/PokemonList";
 
 const Pokemons = () => {
-    return(
-        <PokemonList/>
-    )
-}
+  return <PokemonList />;
+};
 
-export { Pokemons }
+export { Pokemons };

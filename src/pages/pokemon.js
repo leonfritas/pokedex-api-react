@@ -1,9 +1,7 @@
-import { PokemonInfo} from "../components/PokemonInfo";
+import { PokemonInfo } from "../components/PokemonInfo";
 
 const Pokemon = () => {
-    return(
-        <PokemonInfo/>
-    )
-}
+  return <PokemonInfo />;
+};
 
-export { Pokemon }
+export { Pokemon };
