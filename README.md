@@ -1,5 +1,8 @@
 # Em construção...⛏🧪💻📏
 
+![Pokedex](https://user-images.githubusercontent.com/102994125/200965277-179458c4-95b2-440c-b5cb-6fb261bbdbe2.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
