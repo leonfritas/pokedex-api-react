@@ -33,6 +33,11 @@
 .pokeball:active{
     transform: rotate(360deg);
 }
+@media(max-width: 500px){
+   .btn{ margin-left: 0px;
+    margin: 10px;
+   }
+}
 
 
 

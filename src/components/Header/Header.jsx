@@ -22,6 +22,11 @@ const Div = styled.header`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media(max-width: 500px){
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 const Img = styled.img`

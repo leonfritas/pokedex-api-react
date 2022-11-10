@@ -121,6 +121,9 @@ const DivStats = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  @media(max-width: 500px){
+    display: none;
+  }
 `;
 
 const Li = styled.li`
@@ -165,6 +168,7 @@ const Button = styled.button`
   background-color: #baba12;
   cursor: pointer;
   font-weight: 600;
+  
 `;
 
 const H3 = styled.h3`
@@ -191,6 +195,9 @@ const DivContainer = styled.div`
   background-color: #eee;
   padding: 20px;
   box-shadow: 1px 3px 10px 0.5px #000;
+  @media(max-width: 500px){
+  width: 80%;
+  }
 `;
 
 export { PokemonInfo };
