@@ -85,8 +85,11 @@ const Ul = styled.ul`
   flex-wrap: wrap;
   gap: 30px;
   margin: 30px 200px;
-  @media(max-width: 500px){
+  @media(max-widht: 750px){
     margin: 30px;
+  }
+  @media(max-width: 500px){
+    margin: 30px 15px;
   }
 `;
 
