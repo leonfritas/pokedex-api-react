@@ -29,6 +29,9 @@ const PokemonInfo = () => {
         <DivContainer
           style={{ backgroundColor: theme.background, color: theme.color }}
         >
+          <DivName>
+            <H3>{pokemon.name?.[0].toUpperCase() + pokemon.name?.slice(1)}</H3>
+          </DivName>
           <DivLeft>
             <Link to="/">
               <Button>Voltar</Button>
@@ -61,7 +64,6 @@ const PokemonInfo = () => {
             </DivMoves>
           </DivLeft>
           <DivPokemon>
-            <H3>{pokemon.name?.[0].toUpperCase() + pokemon.name?.slice(1)}</H3>
             <Img
               src={pokemon.sprites?.other["official-artwork"].front_default}
               alt={pokemon.name}
@@ -100,6 +102,15 @@ const PokemonInfo = () => {
   );
 };
 
+const DivName = styled.div`
+position: absolute;
+top:5px;
+@media(max-widht: 500px){
+position: absolute;
+top: 5px;
+}
+`
+
 const DivAbilities = styled.div`
   text-align: center;
 `;
@@ -110,6 +121,9 @@ const DivMoves = styled.div`
 
 const DivRight = styled.div`
   width: 160px;
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const DivStat = styled.div`
@@ -121,9 +135,6 @@ const DivStats = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  @media(max-width: 500px){
-    display: none;
-  }
 `;
 
 const Li = styled.li`
@@ -146,6 +157,10 @@ const DivPokemon = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-top: 20px;
+  @media(max-width: 500px){
+    
+  }
 `;
 
 const DivLeft = styled.div`
@@ -154,7 +169,7 @@ const DivLeft = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 160px;
-  height: 400px;
+  height: 300px;
 `;
 
 const Button = styled.button`
@@ -168,15 +183,19 @@ const Button = styled.button`
   background-color: #baba12;
   cursor: pointer;
   font-weight: 600;
-  
 `;
 
 const H3 = styled.h3`
   font-size: 40px;
+  @media (max-width: 500px) {
+  }
 `;
 
 const Img = styled.img`
   width: 300px;
+  @media (max-width: 500px) {
+    width: 250px;
+  }
 `;
 
 const Section = styled.section`
@@ -195,8 +214,8 @@ const DivContainer = styled.div`
   background-color: #eee;
   padding: 20px;
   box-shadow: 1px 3px 10px 0.5px #000;
-  @media(max-width: 500px){
-  width: 80%;
+  @media (max-width: 500px) {
+    width: 80%;
   }
 `;
 
