@@ -194,7 +194,7 @@ const H3 = styled.h3`
 const Img = styled.img`
   width: 300px;
   @media (max-width: 500px) {
-    width: 250px;
+    width: 200px;
   }
 `;
 
