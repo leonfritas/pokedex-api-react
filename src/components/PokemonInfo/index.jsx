@@ -104,10 +104,11 @@ const PokemonInfo = () => {
 
 const DivName = styled.div`
 position: absolute;
-top:5px;
+top:10px;
 @media(max-widht: 500px){
 position: absolute;
 top: 5px;
+
 }
 `
 
@@ -159,7 +160,7 @@ const DivPokemon = styled.div`
   gap: 10px;
   margin-top: 20px;
   @media(max-width: 500px){
-    
+    margin-top: 50px;
   }
 `;
 
