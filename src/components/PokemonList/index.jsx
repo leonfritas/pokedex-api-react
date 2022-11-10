@@ -85,6 +85,9 @@ const Ul = styled.ul`
   flex-wrap: wrap;
   gap: 30px;
   margin: 30px 200px;
+  @media(max-width: 500px){
+    margin: 30px;
+  }
 `;
 
 const Button = styled.button`
